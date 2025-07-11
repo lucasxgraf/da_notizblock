@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="icon" href="assets/favicon.ico">
+
+    <script src="scripts/templates.js"></script>
+    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="styles/assets.css">
+    <link rel="stylesheet" href="styles/note.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="renderAllNotes()">
+
+    <header>
+        <div class="header_content">
+            <div class="logo">Dein Professioneller Notizblock</div>
+        </div>
+    </header>
+
+    <main>
+    <h1>Notizblock</h1>
+    <div class="input_container">
+        <div class="input_position">
+            <input id="title_input" type="text" placeholder="Titel der Notiz">
+            <input id="note_input" type="text" placeholder="Inhalt der Notiz">
+
+            <button onclick="addNote()">Notiz speichern</button>
+        </div>
+    </div>
+    <div class="notes_position">
+        <div class="notes_container">
+            <h2>Notizen 🗒️</h2>
+            <div id="content" class="content_container">
+
+            </div>
+        </div>
+        
+        <div class="archiv_container">
+            <h2>Archiv 📁</h2>
+            <div id="archiv_content" class="content_container">
+
+            </div>
+        </div>
+
+        <div class="trash_container">
+            <h2>Papierkorb 🗑️</h2>
+            <div id="trash_content" class="content_container" >
+
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <p>© 2025 Notizblock - created by Lucas</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

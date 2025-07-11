@@ -1,0 +1,97 @@
+.note {
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    padding: 16px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.note:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-color: #64748b;
+}
+
+.note h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.note p {
+    color: #6b7280;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+}
+
+.note div {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.note button {
+    padding: 6px 12px;
+    font-size: 14px;
+    min-width: 80px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.btn-trash {
+    background-color: #dc2626;
+}
+
+.btn-trash:hover {
+    background-color: #b91c1c;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(220, 38, 38, 0.3);
+}
+
+.btn-archive {
+    background-color: #16a34a;
+}
+
+.btn-archive:hover {
+    background-color: #15803d;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(22, 163, 74, 0.3);
+}
+
+.btn-notes {
+    background-color: #2563eb;
+}
+
+.btn-notes:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 480px) {
+    .note button {
+        min-width: 70px;
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    
+    .note div {
+        justify-content: center;
+    }
+    
+    .note {
+        padding: 12px;
+    }
+}
